@@ -16,10 +16,11 @@ import {
 
 import main from './main/main.component';
 import constants from './app.constants';
+import util from '../components/util/util.module';
 
 import './app.css';
 
-angular.module('comp3705App', [ngCookies, ngResource, ngSanitize, ngRoute, uiBootstrap, main, constants
+angular.module('comp3705App', [ngCookies, ngResource, ngSanitize, ngRoute, uiBootstrap, main, constants, util
 ])
   .config(routeConfig);
 
