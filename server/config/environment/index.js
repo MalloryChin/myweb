@@ -1,8 +1,8 @@
 'use strict';
 /*eslint no-process-env:0*/
 
-import path from 'path';
-import _ from 'lodash';
+var path = require('path');
+var _ = require('lodash');
 
 /*function requiredProcessEnv(name) {
   if(!process.env[name]) {
