@@ -115,6 +115,11 @@ module.exports = function makeWebpackConfig(options) {
      * This handles most of the magic responsible for converting modules
      */
 
+    config.sassLoader = {
+        outputStyle: 'compressed',
+        precision: 10,
+        sourceComments: false
+    };
 
     config.babel = {
         shouldPrintComment(commentContents) {
@@ -183,6 +188,17 @@ module.exports = function makeWebpackConfig(options) {
                 // Reference: https://github.com/webpack/null-loader
                 // Skip loading css in test mode
                 : 'null'
+        }, {
+            // SASS LOADER
+            // Reference: https://github.com/jtangelder/sass-loader
+            test: /\.(scss|sass)$/,
+            loaders: ['style', 'css', 'sass'],
+            include: [
+                path.resolve(__dirname, 'node_modules/bootstrap-sass/assets/stylesheets/*.scss'),
+                path.resolve(__dirname, 'client/app/app.scss')
+            ]
+
+
         }]
     };
 
