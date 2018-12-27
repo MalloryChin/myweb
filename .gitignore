@@ -14,3 +14,5 @@ coverage
 /client/assets/fonts/font-awesome
 *.swp
 *lock.json
+/data/db/
+!/data/db/.gitignore

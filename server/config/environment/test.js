@@ -6,6 +6,6 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/comp3705-test'
+    uri: 'mongodb://localhost/web2-test'
   }
 };
