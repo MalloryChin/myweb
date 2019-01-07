@@ -13,4 +13,3 @@ coverage
 /client/assets/fonts/bootstrap
 /client/assets/fonts/font-awesome
 *.swp
-*lock.json

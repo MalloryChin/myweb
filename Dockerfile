@@ -6,6 +6,9 @@ RUN apt-get update && apt-get upgrade -y
 # Install MongoDB CLI
 RUN apt-get install mongodb-clients -y
 
+# Update NPM and yarn to latest versions
+RUN npm i npm@latest yarn@latest -g
+
 # Install Heroku CLI
 RUN npm install -g heroku
 
