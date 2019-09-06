@@ -9,6 +9,7 @@ export class MainController {
   }
 
   $onInit() {
+
   }
 }
 
