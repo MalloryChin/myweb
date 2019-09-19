@@ -20,4 +20,6 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 /* inject:scss */
 @import 'main/main';
 @import 'portfolio/portfolio';
+@import '../components/footer/footer';
+@import '../components/navbar/navbar';
 /* endinject */

@@ -1,25 +1,31 @@
 <nav class="navbar navbar-default navbar-expand-lg navbar-light navbar-fixed-top" id="mainNav" role="navigation">
-  <div class="navbar-header">
+  <div class="navbar-header hidden-sm hidden-md hidden-lg">
     <button type="button" class="navbar-toggle" ng-click="navbarComponent.isNavCollapsed = !navbarComponent.isNavCollapsed">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-  </div>
+  </div><br>
 
   <div class="collapse navbar-collapse" id="navbarResponsive" uib-collapse="navbarComponent.isNavCollapsed">
-    <a class="container navbar-brand js-scroll-trigger  hidden-xs col-sm-3" href="/#page-top" style="padding-left: 60px;"> Mallory</a>
+    <a class="container navbar-brand js-scroll-trigger  hidden-xs col-sm-3" href="/#page-top" >Mallory</a>
     <div class="container nav-uls">
       <ul class="nav navbar-nav ml-auto navbar-right align-middle">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger hidden-sm hidden-md hidden-lg" href="/">Mallory</a>
+          <a class="nav-link js-scroll-trigger hidden-sm hidden-md hidden-lg" href="/" ng-click="navbarComponent.isNavCollapsed = !navbarComponent.isNavCollapsed">
+            Home
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="/portfolio">Portfolio</a>
+          <a class="nav-link js-scroll-trigger" href="/portfolio" ng-click="navbarComponent.isNavCollapsed = !navbarComponent.isNavCollapsed">
+            Portfolio
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="mailto:mallory.chin@du.edu?Subject=Mail%20from%20my%20site" target="_top">Contact</a>
+          <a class="nav-link js-scroll-trigger" href="mailto:mallory.chin@du.edu?Subject=Mail%20from%20my%20site" target="_top" ng-click="navbarComponent.isNavCollapsed = !navbarComponent.isNavCollapsed">
+            Contact
+          </a>
         </li>
       </ul>
     </div>

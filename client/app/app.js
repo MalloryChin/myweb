@@ -1,7 +1,7 @@
 'use strict';
 
 import angular from 'angular';
-// import ngAnimate from 'angular-animate';
+import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookies';
 import ngResource from 'angular-resource';
 import ngSanitize from 'angular-sanitize';
@@ -24,7 +24,7 @@ import portfolio from '../app/portfolio/portfolio.component';
 import './app.scss';
 
 angular.module('comp3705App', [
-  ngCookies, ngResource, ngSanitize, ngRoute, uiBootstrap, main, constants, util,
+  ngCookies, ngResource, ngSanitize, ngAnimate, ngRoute, uiBootstrap, main, constants, util,
   navbar,
   footer,
   portfolio
