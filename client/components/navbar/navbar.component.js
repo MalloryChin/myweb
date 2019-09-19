@@ -32,9 +32,9 @@ export class NavbarComponent {
 
   scroll() {
     var mainNav = document.getElementById('mainNav');
-    console.log(document.documentElement.scrollTop);
     if(document.documentElement.scrollTop > 50) {
-      console.log('shrink!!!');
+      // console.log(document.documentElement.scrollTop);
+      // console.log('shrink!!!');
       mainNav.classList.add('navbar-shrink');
     } else {
       mainNav.classList.remove('navbar-shrink');
