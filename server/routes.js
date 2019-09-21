@@ -6,8 +6,10 @@
 
 import errors from './components/errors';
 import path from 'path';
+import * as mails from './api/mails';
 
 export default function(app) {
+  app.use('/api/mail', mails.router);
   // All undefined asset or api routes should return a 404
   app.route('/:url(api|auth|components|app|bower_components|assets)/*')
    .get(errors[404]);

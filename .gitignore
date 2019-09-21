@@ -12,4 +12,5 @@ coverage
 .DS_Store
 /client/assets/fonts/bootstrap
 /client/assets/fonts/font-awesome
+/server/api/mails/mails.controller.js
 *.swp
