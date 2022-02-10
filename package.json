@@ -106,7 +106,7 @@
     "lazypipe": "^1.0.2",
     "mocha": "^5.2.0",
     "ng-annotate-loader": "~0.6.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "nodemailer": "^6.3.0",
     "nodemon": "^1.18.9",
     "null-loader": "^0.1.1",
